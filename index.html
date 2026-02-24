@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Learning Beyond Boundaries – Erasmus+ KA210</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,199 +10,40 @@
     <meta name="author" content="Learning Beyond Boundaries Erasmus+ Project">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="Learning Beyond Boundaries – Erasmus+ KA210">
-    <meta property="og:description" content="An Erasmus+ KA210 SCH project enhancing AI literacy and digital competencies in education.">
-    <meta property="og:type" content="website">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.7;
-        }
-
-        header {
-            background: linear-gradient(135deg, #003399, #0055a5);
-            color: white;
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        header p {
-            max-width: 900px;
-            margin: auto;
-            font-size: 18px;
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            padding: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #003399;
-            font-weight: 600;
-        }
-
-        .flags {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-
-        .flags img {
-            width: 26px;
-        }
-
-        section {
-            padding: 70px 20px;
-            max-width: 1100px;
-            margin: auto;
-            background-color: white;
-            border-radius: 12px;
-            margin-top: 40px;
-        }
-
-        h2 {
-            font-size: 32px;
-            color: #003399;
-            border-left: 6px solid #ffcc00;
-            padding-left: 15px;
-            margin-bottom: 25px;
-        }
-
-        /* Video Container Styling */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            background: #000;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: #ffffff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-        }
-
-        ul li {
-            margin-bottom: 12px;
-        }
-
-        .upload-box {
-            background: #eaf1ff;
-            padding: 35px;
-            text-align: center;
-            border-radius: 12px;
-        }
-
-        .upload-box a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 35px;
-            background-color: #ffcc00;
-            color: #003399;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
-
-        .upload-box a:hover {
-            background-color: #003399;
-            color: white;
-        }
-
-        footer {
-            background-color: #003399;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
-            font-size: 14px;
-        }
-
-        .eu-logos {
-            position: fixed;
-            right: 15px;
-            bottom: 15px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            z-index: 999;
-        }
-
-        .eu-logos img {
-            width: 90px;
-            background: white;
-            padding: 6px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.7; }
+        header { background: linear-gradient(135deg, #003399, #0055a5); color: white; padding: 70px 20px; text-align: center; }
+        header h1 { font-size: 42px; margin-bottom: 15px; }
+        header p { max-width: 900px; margin: auto; font-size: 18px; }
+        nav { position: sticky; top: 0; background-color: #ffffff; display: flex; justify-content: center; align-items: center; gap: 30px; padding: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); z-index: 1000; }
+        nav a { text-decoration: none; color: #003399; font-weight: 600; }
+        .flags { display: flex; gap: 12px; align-items: center; }
+        .flags img { width: 26px; }
+        section { padding: 70px 20px; max-width: 1100px; margin: auto; background-color: white; border-radius: 12px; margin-top: 40px; }
+        h2 { font-size: 32px; color: #003399; border-left: 6px solid #ffcc00; padding-left: 15px; margin-bottom: 25px; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+        .upload-box { background: #eaf1ff; padding: 35px; text-align: center; border-radius: 12px; }
+        .upload-box a { display: inline-block; margin-top: 20px; padding: 15px 35px; background-color: #ffcc00; color: #003399; text-decoration: none; font-weight: 600; border-radius: 30px; }
+        footer { background-color: #003399; color: white; text-align: center; padding: 30px 20px; margin-top: 60px; font-size: 14px; }
+        .eu-logos { position: fixed; right: 15px; bottom: 15px; display: flex; flex-direction: column; gap: 10px; z-index: 999; }
+        .eu-logos img { width: 90px; background: white; padding: 6px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Learning Beyond Boundaries: AI in Education</h1>
-    <p>
-        An Erasmus+ KA210 SCH project enhancing artificial intelligence literacy,
-        digital competencies, and innovative teaching practices through European cooperation.
-    </p>
+    <p>An Erasmus+ KA210 SCH project enhancing AI literacy through European cooperation.</p>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#objectives">Objectives</a>
-    <a href="#results">Results</a>
-    <a href="#activities">Activities</a>
-    <a href="#partners">Partners</a>
-    <a href="#materials">Training Materials</a>
-
+    <a href="#about">About</a> <a href="#objectives">Objectives</a> <a href="#results">Results</a>
+    <a href="#activities">Activities</a> <a href="#partners">Partners</a> <a href="#materials">Training Materials</a>
     <div class="flags">
         <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Germany">
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Turkey">
@@ -212,104 +53,31 @@
 
 <section id="about">
     <h2>About the Project</h2>
-    <p>
-        Learning Beyond Boundaries is an Erasmus+ KA210 SCH project that aims to enhance
-        artificial intelligence literacy and digital competencies in education.
-    </p>
-</section>
-
-<section id="objectives">
-    <h2>Project Objectives</h2>
-    <ul>
-        <li>Improve teachers’ understanding of artificial intelligence in education</li>
-        <li>Strengthen students’ digital and critical thinking skills</li>
-        <li>Promote inclusive and learner-centered teaching practices</li>
-        <li>Encourage international cooperation</li>
-        <li>Raise awareness of ethical AI use</li>
-    </ul>
-</section>
-
-<section id="results">
-    <h2>Expected Results</h2>
-    <ul>
-        <li>Increased AI literacy among teachers</li>
-        <li>Improved student engagement</li>
-        <li>Development of AI-supported materials</li>
-        <li>Stronger European cooperation</li>
-    </ul>
-</section>
-
-<section id="activities">
-    <h2>Activities & Mobilities</h2>
-    <ul>
-        <li>Heidelberg, Germany – AI & Digital Education Training</li>
-        <li>Gaziantep, Turkey – Inclusive AI Workshops</li>
-        <li>Bucharest, Romania – Sustainability & AI Activities</li>
-    </ul>
-</section>
-
-<section id="partners">
-    <h2>Project Partners</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>🇩🇪 Germany (Coordinator)</h3>
-            <p>HPC International School – Heidelberg</p>
-        </div>
-        <div class="card">
-            <h3>🇹🇷 Turkey</h3>
-            <p>Gülşen Batar Anatolian High School – Gaziantep</p>
-        </div>
-        <div class="card">
-            <h3>🇷🇴 Romania</h3>
-            <p>Liceul Teoretic "Eugen Lovinescu" – Bucharest</p>
-        </div>
-    </div>
+    <p>Learning Beyond Boundaries is an Erasmus+ KA210 SCH project that aims to enhance AI literacy.</p>
 </section>
 
 <section id="materials">
     <h2>Training Materials</h2>
     <div class="upload-box">
-        <p>
-            You can find our latest project videos and training sessions below. 
-            Partners can also upload documents and photos using the official links.
-        </p>
-
+        <p>You can find our latest project videos below.</p>
         <div style="margin: 30px auto; max-width: 800px;">
             <div class="video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/7OMbg7bRr_s?si=xHGUcvUeB1CyJ8IS" 
-                    title="Learning Beyond Boundaries Project Video" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-                </iframe>
+                <iframe src="https://www.youtube.com/embed/7OMbg7bRr_s?si=xHGUcvUeB1CyJ8IS" allowfullscreen></iframe>
             </div>
         </div>
-        <a href="https://forms.gle/KbJvQVLHuuCuhvxk8" target="_blank">
-            Upload Documents & Photos
-        </a>
-
-        <p style="margin-top:30px; font-weight:600;">
-            For video uploads, please use the official project Drive folder and upload
-            your file to the correct mobility and country subfolder.
-        </p>
-
-        <a href="https://drive.google.com/drive/folders/1aWtlRc1yGqqzKTtbjYUGeHfBvoQLJyS8?usp=sharing" target="_blank">
-            Upload Videos to Official Project Drive
-        </a>
+        <a href="https://forms.gle/KbJvQVLHuuCuhvxk8" target="_blank">Upload Documents & Photos</a>
+        <br>
+        <a href="https://drive.google.com/drive/folders/1aWtlRc1yGqqzKTtbjYUGeHfBvoQLJyS8?usp=sharing" target="_blank">Official Project Drive</a>
     </div>
 </section>
 
 <footer>
-    <p>
-        Erasmus+ KA210 SCH Project – Co-funded by the European Union<br>
-        The European Commission’s support does not constitute an endorsement of the contents.
-    </p>
+    <p>Erasmus+ KA210 SCH Project – Co-funded by the European Union</p>
 </footer>
 
 <div class="eu-logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Erasmus%2B_Logo.svg" alt="Erasmus+ Logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="European Union Logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Erasmus%2B_Logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg">
 </div>
 
 </body>
