@@ -4,81 +4,133 @@
     <meta charset="UTF-8">
     <title>Learning Beyond Boundaries – Erasmus+ KA210</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Learning Beyond Boundaries is an Erasmus+ KA210 SCH project focusing on AI literacy, digital skills, and innovative teaching practices through European cooperation.">
-    <meta name="keywords" content="Erasmus+, KA210, AI in Education, Digital Literacy, European School Project">
-    <meta name="author" content="Learning Beyond Boundaries Erasmus+ Project">
-    <meta name="robots" content="index, follow">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.7; }
-        header { background: linear-gradient(135deg, #003399, #0055a5); color: white; padding: 70px 20px; text-align: center; }
-        header h1 { font-size: 42px; margin-bottom: 15px; }
-        header p { max-width: 900px; margin: auto; font-size: 18px; }
-        nav { position: sticky; top: 0; background-color: #ffffff; display: flex; justify-content: center; align-items: center; gap: 30px; padding: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); z-index: 1000; }
-        nav a { text-decoration: none; color: #003399; font-weight: 600; }
-        .flags { display: flex; gap: 12px; align-items: center; }
-        .flags img { width: 26px; }
-        section { padding: 70px 20px; max-width: 1100px; margin: auto; background-color: white; border-radius: 12px; margin-top: 40px; }
-        h2 { font-size: 32px; color: #003399; border-left: 6px solid #ffcc00; padding-left: 15px; margin-bottom: 25px; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #000; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
-        .upload-box { background: #eaf1ff; padding: 35px; text-align: center; border-radius: 12px; }
-        .upload-box a { display: inline-block; margin-top: 20px; padding: 15px 35px; background-color: #ffcc00; color: #003399; text-decoration: none; font-weight: 600; border-radius: 30px; }
-        footer { background-color: #003399; color: white; text-align: center; padding: 30px 20px; margin-top: 60px; font-size: 14px; }
-        .eu-logos { position: fixed; right: 15px; bottom: 15px; display: flex; flex-direction: column; gap: 10px; z-index: 999; }
-        .eu-logos img { width: 90px; background: white; padding: 6px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: #f9f9f9; color: #333; line-height: 1.6; scroll-behavior: smooth; }
+        header { background: linear-gradient(135deg, #003399, #0055a5); color: white; padding: 60px 20px; text-align: center; }
+        nav { position: sticky; top: 0; background: white; display: flex; justify-content: center; gap: 15px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #003399; font-weight: 600; font-size: 13px; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: #ffcc00; }
+        
+        section { padding: 50px 20px; max-width: 1100px; margin: 20px auto; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h2 { color: #003399; border-left: 5px solid #ffcc00; padding-left: 15px; margin-bottom: 20px; }
+        .main-intro { margin-bottom: 40px; font-size: 16px; color: #444; }
+
+        .partners-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .partner-item { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 25px; text-align: center; display: flex; flex-direction: column; }
+        .flag { width: 60px; margin: 0 auto 15px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .partner-item h3 { margin: 10px 0; font-size: 18px; color: #003399; min-height: 50px; }
+        .partner-desc { font-size: 14px; color: #555; text-align: justify; margin-bottom: 20px; flex-grow: 1; }
+        
+        .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; }
+        .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+        footer { background: #003399; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+        .eu-logos img { height: 40px; background: white; padding: 5px; border-radius: 5px; margin: 0 10px; }
+        .placeholder-text { color: #999; font-style: italic; text-align: center; padding: 20px; border: 1px dashed #ccc; border-radius: 8px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Learning Beyond Boundaries: AI in Education</h1>
-    <p>An Erasmus+ KA210 SCH project enhancing AI literacy through European cooperation.</p>
+    <h1>Learning Beyond Boundaries</h1>
+    <p>Erasmus+ KA210 Project | 2025-2026</p>
 </header>
 
 <nav>
-    <a href="#about">About</a> <a href="#objectives">Objectives</a> <a href="#results">Results</a>
-    <a href="#activities">Activities</a> <a href="#partners">Partners</a> <a href="#materials">Training Materials</a>
-    <div class="flags">
-        <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Germany">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Turkey">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg" alt="Romania">
-    </div>
+    <a href="#about">About</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#activities">Activities</a>
+    <a href="#partners">Partners</a>
+    <a href="#materials">Materials</a>
+    <a href="#results">Results</a>
 </nav>
 
 <section id="about">
     <h2>About the Project</h2>
-    <p>Learning Beyond Boundaries is an Erasmus+ KA210 SCH project that aims to enhance AI literacy.</p>
+    <p>
+        With the approved funding from the National Agency, our Erasmus+ project will run for a total duration of 20 months, starting in November 2025 and continuing until the end of June 2027. Throughout this period, three mobilities will take place. For each mobility, one of the three partner schools will host a small group of students and teachers from the other partner institutions. Before, during, and after these visits, students will collaborate online through eTwinning projects, ensuring continuous exchange and cooperation beyond the physical meetings.
+    </p>
+</section>
+
+<section id="objectives">
+    <h2>Project Objectives</h2>
+    <p>
+        The main objective of the project is to expand the use of artificial intelligence in everyday school life in order to reduce teachers’ workload while simultaneously supporting and personalising students’ individual learning processes. Within the framework of the three mobilities, participants will strengthen their digital competences, explore both the opportunities and potential risks of using AI, and promote social and cultural inclusion as well as environmental awareness.
+    </p>
+</section>
+
+<section id="activities">
+    <h2>Activities</h2>
+    <p>
+        The project enhances classroom practice by integrating meaningful AI-based activities into everyday lessons. Pupils develop digital confidence and learn to use technology in a responsible and reflective way. Teachers gain practical skills as well as reusable materials that can be applied beyond the project duration. By incorporating simple and safe AI-supported tasks into lessons, the project fosters critical thinking, creativity, communication, and responsible technology use. The eTwinning project is structured into five phases: Introduction and Orientation, Digital Skills and AI Literacy, Creativity and Problem Solving, International Collaboration, and Final Products and Evaluation. Pupils will work both individually and in mixed international groups to create digital products and share their learning experiences on TwinSpace. During the mobility in Heidelberg (Germany), the programme combines project-related activities with cultural experiences and interactive opportunities to get to know one another. Visitors will explore Heidelberg through a scavenger hunt, learn how to prepare “Käsespätzle,” a traditional German dish, participate in a design workshop, and take part in many other engaging activities. Across all three mobilities, students will collaboratively develop a handbook on the responsible and effective use of AI. This handbook will serve as the final product of the project and will provide practical guidance, suggestions for AI use, as well as do’s and don’ts for students, teachers, and parents.
+    </p>
+</section>
+
+<section id="partners">
+    <h2>Partners</h2>
+    <p class="main-intro">
+        This project is carried out by three partner schools across Europe: HPC International School in Heidelberg, Germany, Gülşen Batar Anatolian High School in Gaziantep, Turkey, and Liceul Teoretic 'Eugen Lovinescu' in Bukarest, Romania.
+    </p>
+
+    <div class="partners-container">
+        <div class="partner-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" class="flag" alt="Germany">
+            <h3>HPC International School <br><small>(Heidelberg, Germany)</small></h3>
+            <p class="partner-desc">
+                HPC International School is a secondary school located in the beautiful city of Heidelberg, Germany, offering the curriculum of the International Baccalaureate (IB) Organization. Around 150 students are part of our school community, supported by approximately 20 teachers, dedicated parents, and numerous partners worldwide. Our school is proudly represented by our school ambassadors, a small group of students from different grade levels who actively contribute to creating a positive school environment and support visitors and new students. Check out the video below for their individual introduction:
+            </p>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/VİDEO_ID_BURAYA" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="partner-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" class="flag" alt="Turkey">
+            <h3>Gülşen Batar Anatolian High School <br><small>(Gaziantep, Türkiye)</small></h3>
+            <p class="partner-desc" style="text-align: center; color: #999;">
+                Metin ve video hazırlık aşamasındadır.
+            </p>
+            <div class="video-box" style="background: #f0f0f0;">
+                <div style="padding-top: 25%; color: #bbb;">Video coming soon...</div>
+            </div>
+        </div>
+
+        <div class="partner-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg" class="flag" alt="Romania">
+            <h3>Liceul Teoretic 'Eugen Lovinescu' <br><small>(Bucharest, Romania)</small></h3>
+            <p class="partner-desc" style="text-align: center; color: #999;">
+                Metin ve video hazırlık aşamasındadır.
+            </p>
+            <div class="video-box" style="background: #f0f0f0;">
+                <div style="padding-top: 25%; color: #bbb;">Video coming soon...</div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="materials">
     <h2>Training Materials</h2>
-    <div class="upload-box">
-        <p>You can find our latest project videos below.</p>
-        <div style="margin: 30px auto; max-width: 800px;">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/7OMbg7bRr_s?si=xHGUcvUeB1CyJ8IS" allowfullscreen></iframe>
-            </div>
-        </div>
-        <a href="https://forms.gle/KbJvQVLHuuCuhvxk8" target="_blank">Upload Documents & Photos</a>
-        <br>
-        <a href="https://drive.google.com/drive/folders/1aWtlRc1yGqqzKTtbjYUGeHfBvoQLJyS8?usp=sharing" target="_blank">Official Project Drive</a>
-    </div>
+    <p>
+        As part of our eTwinning project within Erasmus+, students have been creating materials to promote e-safety among teenagers, and each school has designed its own posters to present and promote the project. In addition, an introductory video featuring our students has been produced, and preparations are well underway for the upcoming school visit in April. This project aims to deepen pupils’ understanding of artificial intelligence and strengthen their digital competences through hands-on classroom activities conducted in close collaboration with our partner schools in Germany, Romania, and Türkiye.
+    </p>
+</section>
+
+<section id="results">
+    <h2>Project Results</h2>
+    <p class="placeholder-text">
+        The final products of our project, including the AI Handbook, will be uploaded here upon completion of the project.
+    </p>
 </section>
 
 <footer>
-    <p>Erasmus+ KA210 SCH Project – Co-funded by the European Union</p>
+    <div class="eu-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Erasmus%2B_Logo.svg" alt="Erasmus+">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag">
+    </div>
+    <p>© 2025-2026 Learning Beyond Boundaries</p>
 </footer>
-
-<div class="eu-logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Erasmus%2B_Logo.svg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg">
-</div>
 
 </body>
 </html>
