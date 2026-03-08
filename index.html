@@ -15,7 +15,6 @@
         
         section { padding: 50px 20px; max-width: 1100px; margin: 20px auto; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         h2 { color: #003399; border-left: 5px solid #ffcc00; padding-left: 15px; margin-bottom: 20px; }
-        .main-intro { margin-bottom: 40px; font-size: 16px; color: #444; }
 
         .partners-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
         .partner-item { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 25px; text-align: center; display: flex; flex-direction: column; }
@@ -23,8 +22,13 @@
         .partner-item h3 { margin: 10px 0; font-size: 18px; color: #003399; min-height: 50px; }
         .partner-desc { font-size: 14px; color: #555; text-align: justify; margin-bottom: 20px; flex-grow: 1; }
         
-        .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; }
+        .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; margin-top: 15px; }
         .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+        /* Upload Button Style */
+        .upload-section { text-align: center; margin-top: 30px; padding: 20px; border-top: 1px solid #eee; }
+        .upload-btn { display: inline-block; background: #ffcc00; color: #003399; padding: 15px 30px; text-decoration: none; font-weight: 600; border-radius: 50px; transition: transform 0.2s, background 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .upload-btn:hover { transform: translateY(-3px); background: #f0c000; }
 
         footer { background: #003399; color: white; text-align: center; padding: 30px; margin-top: 50px; }
         .eu-logos img { height: 40px; background: white; padding: 5px; border-radius: 5px; margin: 0 10px; }
@@ -49,79 +53,62 @@
 
 <section id="about">
     <h2>About the Project</h2>
-    <p>
-        With the approved funding from the National Agency, our Erasmus+ project will run for a total duration of 20 months, starting in November 2025 and continuing until the end of June 2027. Throughout this period, three mobilities will take place. For each mobility, one of the three partner schools will host a small group of students and teachers from the other partner institutions. Before, during, and after these visits, students will collaborate online through eTwinning projects, ensuring continuous exchange and cooperation beyond the physical meetings.
-    </p>
+    <p>With the approved funding from the National Agency, our Erasmus+ project will run for a total duration of 20 months, starting in November 2025 and continuing until the end of June 2027. Throughout this period, three mobilities will take place. For each mobility, one of the three partner schools will host a small group of students and teachers from the other partner institutions. Before, during, and after these visits, students will collaborate online through eTwinning projects, ensuring continuous exchange and cooperation beyond the physical meetings.</p>
 </section>
 
 <section id="objectives">
     <h2>Project Objectives</h2>
-    <p>
-        The main objective of the project is to expand the use of artificial intelligence in everyday school life in order to reduce teachers’ workload while simultaneously supporting and personalising students’ individual learning processes. Within the framework of the three mobilities, participants will strengthen their digital competences, explore both the opportunities and potential risks of using AI, and promote social and cultural inclusion as well as environmental awareness.
-    </p>
+    <p>The main objective of the project is to expand the use of artificial intelligence in everyday school life in order to reduce teachers’ workload while simultaneously supporting and personalising students’ individual learning processes. Within the framework of the three mobilities, participants will strengthen their digital competences, explore both the opportunities and potential risks of using AI, and promote social and cultural inclusion as well as environmental awareness.</p>
 </section>
 
 <section id="activities">
     <h2>Activities</h2>
-    <p>
-        The project enhances classroom practice by integrating meaningful AI-based activities into everyday lessons. Pupils develop digital confidence and learn to use technology in a responsible and reflective way. Teachers gain practical skills as well as reusable materials that can be applied beyond the project duration. By incorporating simple and safe AI-supported tasks into lessons, the project fosters critical thinking, creativity, communication, and responsible technology use. The eTwinning project is structured into five phases: Introduction and Orientation, Digital Skills and AI Literacy, Creativity and Problem Solving, International Collaboration, and Final Products and Evaluation. Pupils will work both individually and in mixed international groups to create digital products and share their learning experiences on TwinSpace. During the mobility in Heidelberg (Germany), the programme combines project-related activities with cultural experiences and interactive opportunities to get to know one another. Visitors will explore Heidelberg through a scavenger hunt, learn how to prepare “Käsespätzle,” a traditional German dish, participate in a design workshop, and take part in many other engaging activities. Across all three mobilities, students will collaboratively develop a handbook on the responsible and effective use of AI. This handbook will serve as the final product of the project and will provide practical guidance, suggestions for AI use, as well as do’s and don’ts for students, teachers, and parents.
-    </p>
+    <p>The project enhances classroom practice by integrating meaningful AI-based activities into everyday lessons. Pupils develop digital confidence and learn to use technology in a responsible and reflective way. Teachers gain practical skills as well as reusable materials that can be applied beyond the project duration. By incorporating simple and safe AI-supported tasks into lessons, the project fosters critical thinking, creativity, communication, and responsible technology use. The eTwinning project is structured into five phases: Introduction and Orientation, Digital Skills and AI Literacy, Creativity and Problem Solving, International Collaboration, and Final Products and Evaluation. Pupils will work both individually and in mixed international groups to create digital products and share their learning experiences on TwinSpace. During the mobility in Heidelberg (Germany), the programme combines project-related activities with cultural experiences and interactive opportunities to get to know one another. Visitors will explore Heidelberg through a scavenger hunt, learn how to prepare “Käsespätzle,” a traditional German dish, participate in a design workshop, and take part in many other engaging activities. Across all three mobilities, students will collaboratively develop a handbook on the responsible and effective use of AI. This handbook will serve as the final product of the project and will provide practical guidance, suggestions for AI use, as well as do’s and don’ts for students, teachers, and parents.</p>
 </section>
 
 <section id="partners">
     <h2>Partners</h2>
-    <p class="main-intro">
-        This project is carried out by three partner schools across Europe: HPC International School in Heidelberg, Germany, Gülşen Batar Anatolian High School in Gaziantep, Turkey, and Liceul Teoretic 'Eugen Lovinescu' in Bukarest, Romania.
-    </p>
+    <p class="main-intro">This project is carried out by three partner schools across Europe: HPC International School in Heidelberg, Germany, Gülşen Batar Anatolian High School in Gaziantep, Turkey, and Liceul Teoretic 'Eugen Lovinescu' in Bukarest, Romania.</p>
 
     <div class="partners-container">
         <div class="partner-item">
             <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" class="flag" alt="Germany">
             <h3>HPC International School <br><small>(Heidelberg, Germany)</small></h3>
-            <p class="partner-desc">
-                HPC International School is a secondary school located in the beautiful city of Heidelberg, Germany, offering the curriculum of the International Baccalaureate (IB) Organization. Around 150 students are part of our school community, supported by approximately 20 teachers, dedicated parents, and numerous partners worldwide. Our school is proudly represented by our school ambassadors, a small group of students from different grade levels who actively contribute to creating a positive school environment and support visitors and new students. Check out the video below for their individual introduction:
-            </p>
+            <p class="partner-desc">HPC International School is a secondary school located in the beautiful city of Heidelberg, Germany, offering the curriculum of the International Baccalaureate (IB) Organization. Around 150 students are part of our school community, supported by approximately 20 teachers, dedicated parents, and numerous partners worldwide. Our school is proudly represented by our school ambassadors, a small group of students from different grade levels who actively contribute to creating a positive school environment and support visitors and new students. Check out the video below for their individual introduction:</p>
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/VİDEO_ID_BURAYA" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/7OMbg7bRr_s" title="HPC Introduction" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="partner-item">
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" class="flag" alt="Turkey">
             <h3>Gülşen Batar Anatolian High School <br><small>(Gaziantep, Türkiye)</small></h3>
-            <p class="partner-desc" style="text-align: center; color: #999;">
-                Metin ve video hazırlık aşamasındadır.
-            </p>
-            <div class="video-box" style="background: #f0f0f0;">
-                <div style="padding-top: 25%; color: #bbb;">Video coming soon...</div>
-            </div>
+            <p class="partner-desc" style="text-align: center; color: #999;">Metin ve video hazırlık aşamasındadır.</p>
+            <div class="video-box" style="background: #f0f0f0;"><div style="padding-top: 25%; color: #bbb;">Video coming soon...</div></div>
         </div>
 
         <div class="partner-item">
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg" class="flag" alt="Romania">
             <h3>Liceul Teoretic 'Eugen Lovinescu' <br><small>(Bucharest, Romania)</small></h3>
-            <p class="partner-desc" style="text-align: center; color: #999;">
-                Metin ve video hazırlık aşamasındadır.
-            </p>
-            <div class="video-box" style="background: #f0f0f0;">
-                <div style="padding-top: 25%; color: #bbb;">Video coming soon...</div>
-            </div>
+            <p class="partner-desc" style="text-align: center; color: #999;">Metin ve video hazırlık aşamasındadır.</p>
+            <div class="video-box" style="background: #f0f0f0;"><div style="padding-top: 25%; color: #bbb;">Video coming soon...</div></div>
         </div>
     </div>
 </section>
 
 <section id="materials">
-    <h2>Training Materials</h2>
-    <p>
-        As part of our eTwinning project within Erasmus+, students have been creating materials to promote e-safety among teenagers, and each school has designed its own posters to present and promote the project. In addition, an introductory video featuring our students has been produced, and preparations are well underway for the upcoming school visit in April. This project aims to deepen pupils’ understanding of artificial intelligence and strengthen their digital competences through hands-on classroom activities conducted in close collaboration with our partner schools in Germany, Romania, and Türkiye.
-    </p>
+    <h2>Materials</h2>
+    <p>As part of our eTwinning project within Erasmus+, students have been creating materials to promote e-safety among teenagers, and each school has designed its own posters to present and promote the project. In addition, an introductory video featuring our students has been produced, and preparations are well underway for the upcoming school visit in April. This project aims to deepen pupils’ understanding of artificial intelligence and strengthen their digital competences through hands-on classroom activities conducted in close collaboration with our partner schools in Germany, Romania, and Türkiye.</p>
+    
+    <div class="upload-section">
+        <p><strong>Do you want to contribute to our project?</strong></p>
+        <a href="https://forms.gle/NnLf63dyC9u8Ktaw5" target="_blank" class="upload-btn">📤 Upload Files & Photos</a>
+    </div>
 </section>
 
 <section id="results">
     <h2>Project Results</h2>
-    <p class="placeholder-text">
-        The final products of our project, including the AI Handbook, will be uploaded here upon completion of the project.
-    </p>
+    <p class="placeholder-text">The final products of our project, including the AI Handbook, will be uploaded here upon completion of the project.</p>
 </section>
 
 <footer>
