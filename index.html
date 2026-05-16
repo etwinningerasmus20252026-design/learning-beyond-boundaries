@@ -24,9 +24,16 @@
         .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; margin-top: 15px; }
         .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
-        /* Senin yüklediğin video için dikey alan */
+        /* Dikey tanıtım videosu alanı */
         .vertical-video-wrapper { max-width: 280px; margin: 30px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.15); background: #000; }
         .vertical-video-wrapper video { width: 100%; display: block; }
+
+        /* Yeni Eklenen Görsel, Ek YouTube Videosu ve Drive Linki Tasarım Alanı */
+        .activity-gallery-box { text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid #eee; }
+        .activity-image { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); margin-bottom: 25px; }
+        .youtube-video-container { max-width: 700px; margin: 0 auto 25px auto; }
+        .drive-btn { display: inline-block; background-color: #ffcc00; color: #003399; font-weight: bold; text-decoration: none; padding: 12px 25px; border-radius: 8px; transition: background 0.3s; margin-top: 10px; }
+        .drive-btn:hover { background-color: #e6b800; }
 
         footer { background: #003399; color: white; text-align: center; padding: 30px; margin-top: 50px; }
         .eu-logos img { height: 40px; background: white; padding: 5px; border-radius: 5px; margin: 0 10px; }
@@ -60,6 +67,26 @@
             <source src="proje.mp4" type="video/mp4">
             Video bulunamadı. Lütfen klasördeki dosya adının "proje.mp4" olduğundan emin olun.
         </video>
+    </div>
+
+    <!-- GERİ GETİRİLEN VE YENİ YOUTUBE VİDEOSUNUN EKLENDİĞİ BÖLÜM -->
+    <div class="activity-gallery-box">
+        <h3>Activity Showcase & Uploads</h3>
+        
+        <!-- Görsel Alanı (Aktivite Fotoğrafı) -->
+        <img src="aktivite-resim.jpg" class="activity-image" alt="Project Activity">
+
+        <!-- Yeni YouTube Videosu Alanı -->
+        <div class="youtube-video-container">
+            <div class="video-box">
+                <!-- BURAYA YOUTUBE EMBED LINKINIZI EKLEYEBILIRSINIZ -->
+                <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_BURAYA" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Google Drive Yükleme Linki Butonu -->
+        <p>You can use the link below to upload or view our project videos and photos:</p>
+        <a href="DRIVE_LINKINIZ_BURAYA" target="_blank" class="drive-btn">Go to Google Drive Folder</a>
     </div>
 </section>
 
