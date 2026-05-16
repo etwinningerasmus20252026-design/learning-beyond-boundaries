@@ -16,23 +16,28 @@
         
         section { padding: 50px 20px; max-width: 1100px; margin: 20px auto; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         h2 { color: #003399; border-left: 5px solid #ffcc00; padding-left: 15px; margin-bottom: 20px; }
+        h3 { color: #003399; margin-top: 0; }
+
+        .objectives-list { list-style-type: none; padding: 0; }
+        .objectives-list li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .objectives-list li::before { content: "✔"; color: #ffcc00; position: absolute; left: 0; font-weight: bold; }
 
         .partners-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
         .partner-item { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 25px; text-align: center; }
         .flag { width: 60px; margin-bottom: 15px; border-radius: 4px; }
         
-        .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; margin-top: 15px; }
+        .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; margin-top: 15px; margin-bottom: 15px; }
         .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
-        /* Dikey tanıtım videosu alanı */
         .vertical-video-wrapper { max-width: 280px; margin: 30px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.15); background: #000; }
         .vertical-video-wrapper video { width: 100%; display: block; }
 
-        /* Yeni Eklenen Görsel, Ek YouTube Videosu ve Drive Linki Tasarım Alanı */
-        .activity-gallery-box { text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid #eee; }
-        .activity-image { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); margin-bottom: 25px; }
-        .youtube-video-container { max-width: 700px; margin: 0 auto 25px auto; }
-        .drive-btn { display: inline-block; background-color: #ffcc00; color: #003399; font-weight: bold; text-decoration: none; padding: 12px 25px; border-radius: 8px; transition: background 0.3s; margin-top: 10px; }
+        /* Eski kodda yer alan genişletilmiş yükleme ve galeri alanı stilleri */
+        .upload-media-box { background: #f0f4fa; border: 2px dashed #003399; border-radius: 12px; padding: 30px; text-align: center; margin-top: 30px; }
+        .media-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 25px; }
+        .media-gallery img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        
+        .drive-btn { display: inline-block; background-color: #ffcc00; color: #003399; font-weight: bold; text-decoration: none; padding: 12px 25px; border-radius: 8px; transition: background 0.3s; font-size: 14px; text-transform: uppercase; }
         .drive-btn:hover { background-color: #e6b800; }
 
         footer { background: #003399; color: white; text-align: center; padding: 30px; margin-top: 50px; }
@@ -51,16 +56,27 @@
     <a href="#objectives">Objectives</a>
     <a href="#activities">Activities</a>
     <a href="#partners">Partners</a>
+    <a href="#results">Project Results</a>
 </nav>
 
 <section id="about">
     <h2>About the Project</h2>
-    <p>This Erasmus+ project will run for 20 months, starting in November 2025 and continuing until June 2027. Students will collaborate online through eTwinning projects involving partners from Germany, Turkey, and Romania.</p>
+    <p>This Erasmus+ project will run for 20 months, starting in November 2025 and continuing until June 2027. Students will collaborate online through eTwinning projects involving partners from Germany, Turkey, and Romania. The core focus of our project is exploring the integration of artificial intelligence within educational frameworks, reducing teacher workload, and personalizing student learning processes responsibly.</p>
+</section>
+
+<section id="objectives">
+    <h2>Project Objectives</h2>
+    <ul class="objectives-list">
+        <li>Developing a collaborative AI Handbook regarding the responsible and effective use of artificial intelligence in schools.</li>
+        <li>Coordinating three student and teacher mobilities across partner schools to experience different educational cultures.</li>
+        <li>Enhancing digital competencies and fostering international educational collaborations among students and staff.</li>
+        <li>Raising awareness on critical modern issues including e-safety among teenagers.</li>
+    </ul>
 </section>
 
 <section id="activities">
-    <h2>Activities & Project Video</h2>
-    <p>The project integrates AI-based activities into everyday lessons. Below is our project introduction video:</p>
+    <h2>Activities & Project Videos</h2>
+    <p>The project integrates AI-based activities into everyday lessons. Below is our main project introduction video and the activities documentation section:</p>
     
     <div class="vertical-video-wrapper">
         <video controls playsinline>
@@ -69,33 +85,32 @@
         </video>
     </div>
 
-    <!-- GERİ GETİRİLEN VE YENİ YOUTUBE VİDEOSUNUN EKLENDİĞİ BÖLÜM -->
-    <div class="activity-gallery-box">
-        <h3>Activity Showcase & Uploads</h3>
+    <!-- ESKİ KODDAKİ GÖRSEL VE VİDEO YÜKLEME DRİVE ALANI -->
+    <div class="upload-media-box">
+        <h3>Activity Media Gallery & Share Space</h3>
+        <p>Below you can view our latest activity pictures. Use the button to access our collaborative Google Drive folder to upload new videos and photos from your school mobilities!</p>
         
-        <!-- Görsel Alanı (Aktivite Fotoğrafı) -->
-        <img src="aktivite-resim.jpg" class="activity-image" alt="Project Activity">
-
-        <!-- Yeni YouTube Videosu Alanı -->
-        <div class="youtube-video-container">
-            <div class="video-box">
-                <!-- BURAYA YOUTUBE EMBED LINKINIZI EKLEYEBILIRSINIZ -->
-                <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_BURAYA" allowfullscreen></iframe>
-            </div>
+        <div class="media-gallery">
+            <!-- Eski haline uygun örnek görsel alanları -->
+            <img src="activity1.jpg" alt="Mobility Workshop" onerror="this.src='https://via.placeholder.com/200x150?text=Activity+Image+1'">
+            <img src="activity2.jpg" alt="AI Presentation" onerror="this.src='https://via.placeholder.com/200x150?text=Activity+Image+2'">
+            <img src="activity3.jpg" alt="Student Collaboration" onerror="this.src='https://via.placeholder.com/200x150?text=Activity+Image+3'">
         </div>
 
-        <!-- Google Drive Yükleme Linki Butonu -->
-        <p>You can use the link below to upload or view our project videos and photos:</p>
-        <a href="DRIVE_LINKINIZ_BURAYA" target="_blank" class="drive-btn">Go to Google Drive Folder</a>
+        <!-- Sizin Bahsettiğiniz Görsel/Video Yükleme Alanı ve Linki -->
+        <a href="YOUR_GOOGLE_DRIVE_UPLOAD_LINK_HERE" target="_blank" class="drive-btn">📁 Upload / View Media on Google Drive</a>
     </div>
 </section>
 
 <section id="partners">
-    <h2>Partners</h2>
+    <h2>Partners & School Mobilities</h2>
+    <p>Our project links three passionate partner institutions across Europe, hosting small groups for visits at each institution during the project period:</p>
+    
     <div class="partners-container">
         <div class="partner-item">
             <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" class="flag" alt="Germany">
-            <h3>HPC International School <br><small>(Germany)</small></h3>
+            <h3>HPC International School <br><small>(Heidelberg, Germany)</small></h3>
+            <p>Focusing on the preliminary frameworks of AI in student learning and hosting collaborative workshops.</p>
             <div class="video-box">
                 <iframe src="https://www.youtube.com/embed/7OMbg7bRr_s" allowfullscreen></iframe>
             </div>
@@ -103,7 +118,8 @@
 
         <div class="partner-item">
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" class="flag" alt="Turkey">
-            <h3>Gülşen Batar Anatolian High School <br><small>(Türkiye)</small></h3>
+            <h3>Gülşen Batar Anatolian High School <br><small>(Gaziantep, Türkiye)</small></h3>
+            <p>Coordinating digital content management, eTwinning frameworks, and local implementation strategies.</p>
             <div class="video-box">
                 <iframe src="https://www.youtube.com/embed/iHXSStEq4nA" allowfullscreen></iframe>
             </div>
@@ -111,12 +127,22 @@
 
         <div class="partner-item">
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg" class="flag" alt="Romania">
-            <h3>Liceul Teoretic 'Eugen Lovinescu' <br><small>(Romania)</small></h3>
+            <h3>Liceul Teoretic 'Eugen Lovinescu' <br><small>(Bucharest, Romania)</small></h3>
+            <p>Leading the interactive evaluation parameters and creating structural project result frameworks.</p>
             <div class="video-box">
                 <iframe src="https://www.youtube.com/embed/1s7gCsd4vUo" allowfullscreen></iframe>
             </div>
         </div>
     </div>
+</section>
+
+<section id="results">
+    <h2>Project Results & Products</h2>
+    <p>Upon completion of our timelines, final project products, resources, and student-generated materials will be available here:</p>
+    <ul>
+        <li><strong>The Collaborative AI Handbook:</strong> Guidelines created by students across all three mobilities.</li>
+        <li><strong>Teenagers e-Safety Materials:</strong> Workshops, presentations, and guides focused on digital safety.</li>
+    </ul>
 </section>
 
 <footer>
