@@ -33,13 +33,17 @@
         .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; margin-top: 15px; }
         .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
+        /* Shorts videoları dikey formatta daha güzel dursun diye özel kutu düzeni */
+        .results-video-container { max-width: 360px; margin: 25px auto 0; }
+        .shorts-box { position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden; border-radius: 12px; background: #000; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+        .shorts-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
         .upload-section { text-align: center; margin-top: 30px; padding: 20px; border-top: 1px solid #eee; }
         .upload-btn { display: inline-block; background: #ffcc00; color: #003399; padding: 15px 30px; text-decoration: none; font-weight: 600; border-radius: 50px; transition: transform 0.2s, background 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .upload-btn:hover { transform: translateY(-3px); background: #f0c000; }
 
         footer { background: #003399; color: white; text-align: center; padding: 30px; margin-top: 50px; }
         .eu-logos img { height: 40px; background: white; padding: 5px; border-radius: 5px; margin: 0 10px; }
-        .placeholder-text { color: #999; font-style: italic; text-align: center; padding: 20px; border: 1px dashed #ccc; border-radius: 8px; }
     </style>
 </head>
 <body>
@@ -117,7 +121,12 @@
 
 <section id="results">
     <h2>Project Results</h2>
-    <p class="placeholder-text">The final products of our project, including the AI Handbook, will be uploaded here upon completion of the project.</p>
+    <p>The final products of our project, including the AI Handbook, will be showcased here. Check out our latest project result summary video below:</p>
+    <div class="results-video-container">
+        <div class="shorts-box">
+            <iframe src="https://www.youtube.com/embed/LwgBd8x37tg" title="Project Results Summary" allowfullscreen></iframe>
+        </div>
+    </div>
 </section>
 
 <footer>
